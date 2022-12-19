@@ -1891,7 +1891,7 @@ progress {
   margin-bottom: 1rem;
   color: #7e7e7e;
   vertical-align: top;
-  border-color: #e1e1f0;
+  border-color: rgb(0 0 0 / 20%);
 }
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -7529,7 +7529,8 @@ fieldset:disabled .btn {
 }
 
 .ms-2 {
-  margin-left: 0.5rem !important;
+  margin-left: 5px !important;
+  font-size: 17px;
 }
 
 .ms-3 {
@@ -7944,7 +7945,7 @@ fieldset:disabled .btn {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+  background-color: (var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
@@ -16771,6 +16772,7 @@ button:focus {
 .table th {
   font-size: 14px;
   font-weight: 600;
+  color: #000;
 }
 
 .form-switch .form-check-input {
@@ -18152,21 +18154,24 @@ button:focus {
 .dashboard-area .features-box .card.card-bx {
   box-shadow: 0 8px 0.75rem 0 rgba(0, 0, 0, 0.03);
   border-radius: var(--border-radius-base);
-  height: 169px;
-  z-index: -1;
+  height: 120px;
+  /* z-index: -1; */
 }
 .dashboard-area .features-box .card.card-content {
   color: #fff;
 }
 .dashboard-area .features-box .card.card-content .title {
   color: #fff;
-  font-size: 2.125rem;
+  font-size: 20px;
+  padding: 8px;
   position: relative;
   font-weight: 700;
 }
 .dashboard-area .features-box .card.card-content .title:after {
   content: "";
   position: absolute;
+  color: #000;
+  font-size: 18px;
   top: 0px;
   background-repeat: no-repeat;
   width: 30px;
@@ -18377,8 +18382,8 @@ button:focus {
 .banner-wrapper {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background: var(--gradient);
-  margin-bottom: -40px;
+  /* background: var(--gradient); */
+  /* margin-bottom: -40px; */
   padding: 10px 0 40px;
   overflow: hidden;
 }
